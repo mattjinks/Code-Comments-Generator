@@ -1,24 +1,45 @@
-# README
+# Code Comment Generator
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Code Comment Generator is a project that integrates OpenAI’s GPT-4 model into a Ruby on Rails API to generate comments for code snippets in real time. This project demonstrates the potential of AI-driven tools in software development, offering a solution that enhances code readability and maintainability by automating the process of adding comments.
 
-Things you may want to cover:
+## Project Overview:
 
-* Ruby version
+1\. The project consists of two main components:
 
-* System dependencies
+2\. Rails API: A backend service built with Ruby on Rails that uses OpenAI's GPT-4 model to generate comments for code snippets provided by users. Ruby Client Application: A separate Ruby application that interacts with the Rails API, allowing users to submit code snippets and receive AI-generated comments in real-time.
 
-* Configuration
+## Features:
 
-* Database creation
+**- Real-Time Comment Generation:** Leverages OpenAI's GPT-4 model to generate code comments dynamically as users input code.
 
-* Database initialization
+**- Streaming Responses:** The Rails API streams responses in real-time, providing immediate feedback to the client.
 
-* How to run the test suite
+**- Modular Design:** The API is designed to be easily integrated into other applications or extended with additional functionality.
 
-* Services (job queues, cache servers, search engines, etc.)
+## Running the API:
+To start the Rails API, navigate to the code_comment_generator_api directory and run:
+```bash
+rails s
+```
+This will start the API server at http://localhost:3000.
 
-* Deployment instructions
+## Running the Client:
+To start the Client App, navigate to the code_comment_generator_client directory and run:
+```bash
+rails s
+```
+This client server is configured to listen at http://localhost:4567.
 
-* ...
+The client app should look something like this:
+
+![enter image description here](https://drive.google.com/file/d/19i36wzINEy0Y4-8S9oOLg6xkazV73zC3/view?usp=sharing)
+
+If you want to test the API without using the client app send a POST request to the /comment endpoint with the following JSON payload:
+
+```
+{
+  "code": "String s = "Hello World!"
+}
+```
+
+The API will respond with a stream of comments generated for the provided code snippet.

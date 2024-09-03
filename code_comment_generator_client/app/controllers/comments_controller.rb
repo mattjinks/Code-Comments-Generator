@@ -8,7 +8,7 @@ class CommentsController < ApplicationController
     response.headers['Last-Modified'] = Time.now.httpdate
 
     code_snippet = params[:code_snippet]
-    uri = URI('http://localhost:3000/comments')
+    uri = URI('http://localhost:3000/comment')
     http = Net::HTTP.new(uri.host, uri.port)
     request = Net::HTTP::Post.new(uri.path, { 'Content-Type' => 'application/json' })
     request.body = { code: code_snippet }.to_json

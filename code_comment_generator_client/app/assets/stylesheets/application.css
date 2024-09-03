@@ -13,3 +13,40 @@
  *= require_tree .
  *= require_self
  */
+ .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .form-container {
+    padding-right: 24px;
+    padding-bottom: 24px;
+  }
+
+  #commentedCode {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    white-space: pre-wrap;
+  }
+
+  .result-container {
+    width: 60%;
+    height: 60vh;
+    background-color: black;
+    margin-top: 24px;
+  }
+
+  textarea.form-control {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  button {
+    margin-top: 0px;
+    padding-top: 0px;
+  }

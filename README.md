@@ -2,9 +2,9 @@
 
 Code Comment Generator is a project that integrates OpenAI’s GPT-4 model into a Ruby on Rails API to generate comments for code snippets in real time. This project demonstrates the potential of AI-driven tools in software development, offering a solution that enhances code readability and maintainability by automating the process of adding comments.
 
-## Demo: https://youtu.be/F7hT0tjAkJw?si=aJperXFRC8K2KO3S
+**Demo:** https://youtu.be/F7hT0tjAkJw?si=aJperXFRC8K2KO3S
 
-## Blog: https://medium.com/@mattjinks/code-comment-generator-with-ruby-on-rails-and-openai-0bce18bab911
+**Blog:** https://medium.com/@mattjinks/code-comment-generator-with-ruby-on-rails-and-openai-0bce18bab911
 
 ## Project Overview:
 
